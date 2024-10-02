@@ -73,7 +73,7 @@ function Game(){
 
 function App() {
   //let count =0;
- 
+ const [step, setStep] = React.useState(0)
   return (
     <div className="App">
       {/* <Game/> */}
