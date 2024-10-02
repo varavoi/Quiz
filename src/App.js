@@ -75,12 +75,12 @@ function App() {
   //let count =0;
  const [step, setStep] = React.useState(0)
  let question = questions[step]
- console.log(question)
  
+
   return (
     <div className="App">
-      {/* <Game/> */}
-      <Result/>
+      <Game question={question}/>
+      {/* <Result/> */}
     </div>
   );
 }
