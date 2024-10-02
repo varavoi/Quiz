@@ -55,17 +55,17 @@ function Result(){
   )
 }
 
-function Game(){
+function Game({question}){
   return (
     <div>
       <div className='progress'>
         <div style={{width:'50%'}} className='progressFill'></div>
       </div>
-      <h1>Что такое useState?</h1>
+      <h1>{question.title}</h1>
       <ul>
-        <li>Это функция для хранения данных компонента</li>
-        <li>Это глобальный стейт</li>
-        <li>Это стилизация объекта</li>
+        {question.variants.map((text)=>{
+          <li key={text}>{text}</li>
+        })}
       </ul>
     </div>
   )
