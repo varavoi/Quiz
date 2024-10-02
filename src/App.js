@@ -80,8 +80,10 @@ function App() {
  }
   return (
     <div className="App">
-      <Game step ={step} question={question} onClickVariant ={onClickVariant}/>
-      {/* <Result/> */}
+      {step !== questions.length?
+      <Game step ={step} question={question} onClickVariant ={onClickVariant}/>:
+       <Result/> 
+      }
     </div>
   );
 }
