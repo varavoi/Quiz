@@ -75,6 +75,7 @@ function App() {
  let question = questions[step]
  const onClickVariant =(index)=>{
   console.log(step, index)
+  setStep(step+1)
  }
   return (
     <div className="App">
