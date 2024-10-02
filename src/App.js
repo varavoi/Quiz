@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
-
+//Это первоначальная версия приложения
 const questions = [
   {
     title: 'React - это ...?',
