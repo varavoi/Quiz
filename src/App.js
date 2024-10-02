@@ -76,7 +76,6 @@ function App() {
  const [step, setStep] = React.useState(0)
  let question = questions[step]
  
-
   return (
     <div className="App">
       <Game question={question}/>
