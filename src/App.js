@@ -55,11 +55,12 @@ function Result(){
   )
 }
 
-function Game({question, onClickVariant}){
+function Game({step, question, onClickVariant}){
+  const percentage = Math.round(step/questions.length *100);
   return (
     <div>
       <div className='progress'>
-        <div style={{width:'50%'}} className='progressFill'></div>
+        <div style={{width:`${percentage}%`}} className='progressFill'></div>
       </div>
       <h1>{question.title}</h1>
       <ul>
@@ -79,7 +80,7 @@ function App() {
  }
   return (
     <div className="App">
-      <Game question={question} onClickVariant ={onClickVariant}/>
+      <Game step ={step} question={question} onClickVariant ={onClickVariant}/>
       {/* <Result/> */}
     </div>
   );
