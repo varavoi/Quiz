@@ -93,7 +93,47 @@ li:hover {
 
  
  li:active {
-  background-color: #4CAF50;
+  background-color: #2e7d32; /* Еще более темный зеленый цвет */
+  transform: translateY(2px);
   color: white;
  }
  
+ .result {
+  display: flex;
+  flex-direction: column; /* Элементы располагаются вертикально */
+  align-items: center; /* Выравнивание по центру по горизонтали */
+  padding: 20px; /* Отступы вокруг элементов */
+  border: 1px solid #ddd; /* Тонкая рамка вокруг блока */
+  border-radius: 5px; /* Закругленные углы */
+  margin-bottom: 20px; /* Отступ снизу */
+}
+
+.result img {
+  width: 100px; /* Ширина изображения */
+  height: 100px; /* Высота изображения */
+  margin-bottom: 10px; /* Отступ снизу */
+  border-radius: 50%;
+}
+
+.result h2 {
+  font-size: 1.5em; /* Размер шрифта заголовка */
+  margin-bottom: 15px; /* Отступ снизу */
+}
+
+.result button {
+  padding: 10px 20px; /* Отступы внутри кнопки */
+  background-color: #4CAF50; /* Зеленый цвет */
+  color: white; /* Белый цвет текста */
+  border: none; /* Убираем рамку */
+  border-radius: 5px; /* Закругленные углы */
+  cursor: pointer; /* Курсор "указатель" при наведении */
+  font-size: 1em;
+}
+
+.result button:hover {
+  background-color: #3e8e41; /* Темно-зеленый цвет при наведении */
+}
+.result button:active {
+  background-color: #2e7d32; /* Еще более темный зеленый цвет */
+  transform: translateY(2px); /* Небольшое смещение вниз */
+ }
