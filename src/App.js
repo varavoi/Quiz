@@ -4,7 +4,7 @@ import './App.css';
 import Mainmenu from "./Components/Menu";
 import Quiz from "./Components/Game";
 import EndScreen from "./Components/Result";
-
+import { QuizContext } from "./Helpers/Contexts.js"; 
 
 function App() {
   //let count =0;
