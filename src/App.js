@@ -73,10 +73,14 @@ function Game({step, question, onClickVariant}){
 function App() {
   //let count =0;
  const [step, setStep] = React.useState(0)
+ const [correct, setCorrect] = React.useState(0)
  let question = questions[step]
  const onClickVariant =(index)=>{
   console.log(step, index)
   setStep(step+1)
+  if(index===question.correct){
+    setCorrect(correct+1)
+  }
  }
   return (
     <div className="App">
