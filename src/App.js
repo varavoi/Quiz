@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Mainmenu from "./Components/Menu";
-import Quiz from "./Components/Game";
-import EndScreen from "./Components/Result";
-
+import Menu from "./Components/Menu";
+import Game from "./Components/Game";
+import Result from "./Components/Result";
+import { QuizContext } from "./Helpers/Contexts.js"; 
+import { questions } from './Helpers/Questions_DB_Local.js';
 
 function App() {
   //let count =0;
