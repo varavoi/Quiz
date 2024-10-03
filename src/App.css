@@ -120,7 +120,7 @@ li:hover {
   margin-bottom: 15px; /* Отступ снизу */
 }
 
-.result button {
+ button {
   padding: 10px 20px; /* Отступы внутри кнопки */
   background-color: #4CAF50; /* Зеленый цвет */
   color: white; /* Белый цвет текста */
@@ -130,10 +130,46 @@ li:hover {
   font-size: 1em;
 }
 
-.result button:hover {
+ button:hover {
   background-color: #3e8e41; /* Темно-зеленый цвет при наведении */
 }
-.result button:active {
+ button:active {
   background-color: #2e7d32; /* Еще более темный зеленый цвет */
   transform: translateY(2px); /* Небольшое смещение вниз */
  }
+
+ .Mainmenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Выравнивание элементов по центру по горизонтали */
+  justify-content: center; /* Выравнивание элементов по центру по вертикали */
+  height: 30vh; /* Занимает всю высоту экрана */
+  background-color: #f5f5f5; /* Светло-серый фон */
+  padding: 20px; /* Отступы внутри блока */
+ 
+}
+
+.Mainmenu h1 {
+  font-size: 2.5em; /* Размер шрифта заголовка */
+  margin: 20px 0px; /* Отступ снизу */
+  color: #333; /* Темно-серый цвет текста */
+}
+
+.Mainmenu button {
+  padding: 15px 30px; /* Отступы внутри кнопки */
+  background-color: #4CAF50; /* Зеленый цвет */
+  color: white; /* Белый цвет текста */
+  border: none; /* Убираем рамку */
+  border-radius: 5px; /* Закругленные углы */
+  cursor: pointer; /* Курсор "указатель" при наведении */
+  font-size: 1.2em; /* Размер шрифта кнопки */
+}
+
+.Mainmenu button:hover {
+  background-color: #3e8e41; /* Темно-зеленый цвет при наведении */
+}
+
+.Mainmenu button:active {
+  background-color: #2e7d32; /* Еще более темный зеленый цвет при нажатии */
+  transform: translateY(2px); /* Небольшое смещение вниз */
+}

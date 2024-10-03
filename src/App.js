@@ -24,7 +24,7 @@ function App() {
   return (
     <div className="App">
       <QuizContext.Provider value ={{gameState, setGameState, step, setStep, correct, setCorrect}}>
-      <h1>Викторина</h1>
+      <h1>Quiz</h1>
       {gameState === "menu" && <Menu /> }
       {gameState === "game" && <Game /> }
       {gameState === "result" && <Result /> }
