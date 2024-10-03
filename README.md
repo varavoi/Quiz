@@ -36,13 +36,17 @@
 ```
 ├── src
 │  ├── App.js
-│  ├── components
-│  │  ├── Question.js
-│  │  ├── Result.js
-│  │  └── Menu.js
+│  ├── Components
+│  │  ├── Game.jsx
+│  │  ├── Menu.jsx
+│  │  └── Result.jsx
+│  ├── Helpers
+│  │  ├── Contexts.js
+│  │  └── Questions_DB_Local.js
 │  └── App.css
 └── public
   └── index.html
+  └── index.js
 ```
 
 
