@@ -9,7 +9,7 @@ export const questions = [
     {
       title: 'Какое из этих чисел делится на 3?',
       variants: ['12', '15', '18'],
-      correct: 2,
+      correct: 1,
      },
      {
       title: 'Какой город является столицей США?',

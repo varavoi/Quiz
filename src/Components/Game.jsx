@@ -13,19 +13,28 @@ function Game(){
         setCorrect(correct+1)
       }
   }
+  const finishGame = (index) => {
+    if(index===question.correct){
+      setCorrect(correct+1)
+    }
+    setGameState("result");
+  };
  
     const percentage = Math.round(step/questions.length *100);
-    return 
-        (
+    console.log(step!==questions.length)
+    return (
           <div>
             <div className='progress'>
               <div style={{width:`${percentage}%`}} className='progressFill'></div>
             </div>
             <h1>{question.title}</h1>
             <ul>
-              {question.variants.map((text, index)=>(<li onClick={()=>onClickVariant(index)} key={text}>{text}</li>))}
+              {question.variants.map((text, index)=>(<li onClick={
+                ()=>step===questions.length-1?finishGame(index):onClickVariant(index)
+                } key={text}>{text}</li>))}
             </ul>
          </div>
         )
   }
   export default Game;
+ 

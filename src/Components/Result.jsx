@@ -6,7 +6,7 @@ import { questions } from "../Helpers/Questions_DB_Local";
 function Result(){
   const { gameState, setGameState, step, setStep, correct, setCorrect} = React.useContext(QuizContext);
   const finishGame = () => {
-    setCorrect(0);
+    setStep(0); setCorrect(0); 
     setGameState("menu");
   };
     return(
