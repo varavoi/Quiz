@@ -33,16 +33,18 @@
    ``npm start``
    
 ### Структура проекта
-
+```
 ├── src
-│   ├── App.js
-│   ├── components
-│   │   ├── Question.js
-│   │   ├── Result.js
-│   │   └── Menu.js
-│   └── App.css
+│  ├── App.js
+│  ├── components
+│  │  ├── Question.js
+│  │  ├── Result.js
+│  │  └── Menu.js
+│  └── App.css
 └── public
-    └── index.html
+  └── index.html
+```
+
 
 
 ### Дополнительная информация
